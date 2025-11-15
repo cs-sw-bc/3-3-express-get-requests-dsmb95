@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random user display</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Random User Information</h1>
-        <button id="fetchButton">Get a random user</button>
-        <div id="userInfo" class="user-info">
-            <p>Name: <span id="userName"></span></p>
-            <p>Email: <span id="userEmail"></span></p>
-            <p>Age: <span id="userAge"></span></p>
-        </div>
+      <h1>Random User Information</h1>
+      <label for="healthCheckMessage">Health Check Message:</label>
+      <input
+        id="healthCheckMessage"
+        type="text"
+        name="healthCheckMessage"
+        placeholder="Enter message here"
+        style="display: block; margin: auto; margin-top: 10px"
+      />
+      <button id="fetchButton">Get a random user</button>
+      <div
+        id="healthCheckResponse"
+        class="health-check-response"
+        style="margin-top: 20px; text-align: center">
+        <p>Health Check Status: <span id="healthMessage"></span></p>
+      </div>
+
+      <div id="userInfo" class="user-info">
+        <p>Name: <span id="userName"></span></p>
+        <p>Email: <span id="userEmail"></span></p>
+        <p>Age: <span id="userAge"></span></p>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
